@@ -1,0 +1,23 @@
+:root{--bg:#f7f8fa;--card:#fff;--ink:#1d2129;--muted:#5d6370;--line:#e2e5ea;--accent:#2f5bd3}
+@media (prefers-color-scheme:dark){:root{--bg:#15171b;--card:#1d2026;--ink:#e9eaed;--muted:#a2a7b1;--line:#2d3139;--accent:#88a6f5}}
+*{box-sizing:border-box}
+body{margin:0;background:var(--bg);color:var(--ink);font:16px/1.75 -apple-system,BlinkMacSystemFont,"Hiragino Sans","Noto Sans JP",sans-serif;padding:40px 16px 72px}
+main{max-width:760px;margin:0 auto}
+.eyebrow{font-size:12px;letter-spacing:.12em;text-transform:uppercase;color:var(--accent);margin:0 0 6px}
+h1{font-size:clamp(26px,5vw,34px);line-height:1.25;margin:0 0 8px}
+.meta{color:var(--muted);font-size:14px;margin:0 0 32px;padding-bottom:24px;border-bottom:1px solid var(--line)}
+h2{font-size:19px;margin:36px 0 8px}
+h3{font-size:16px;margin:20px 0 4px}
+p,ul,ol{margin:0 0 12px}
+ul,ol{padding-left:22px}
+li{margin-bottom:6px}
+table{width:100%;border-collapse:collapse;font-size:14.5px;margin:8px 0 16px}
+th,td{text-align:left;padding:8px 10px;border-bottom:1px solid var(--line);vertical-align:top}
+th{color:var(--muted);font-weight:600;font-size:13px}
+.wrap-table{overflow-x:auto}
+.card{background:var(--card);border:1px solid var(--line);border-radius:12px;padding:16px 18px;margin:12px 0}
+a{color:var(--accent)}
+footer{margin-top:48px;padding-top:20px;border-top:1px solid var(--line);color:var(--muted);font-size:13.5px}
+.apps{display:grid;gap:12px;grid-template-columns:repeat(auto-fit,minmax(240px,1fr))}
+.apps .card h2{margin:0 0 6px;font-size:18px}
+.apps .card ul{list-style:none;padding:0;margin:0}
